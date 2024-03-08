@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #FED941;
+  --white: #FFFFFE;
+  --grey: #A7A9BE;
+  --black: #000000;
+  --background: #0F0E17;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--white);
+}
+
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+}

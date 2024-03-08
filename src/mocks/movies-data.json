@@ -1,0 +1,419 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/j1YJz13FzfJFeUsfekP1QBU7KJs.jpg",
+      "id": 763215,
+      "title": "Damsel",
+      "original_language": "en",
+      "original_title": "Damsel",
+      "overview": "Una obediente damisela acepta casarse con un apuesto príncipe. Pronto descubre que lo que en realidad quiere de ella la familia del novio es sacrificarla y, de este modo, saldar una antigua deuda. Cuando es arrojada a una cueva con un dragón que escupe fuego, solo tiene su ingenio y voluntad para sobrevivir.",
+      "poster_path": "/neil20KXNhdctwdoyZdVFm7Fwq0.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        14,
+        28,
+        12
+      ],
+      "popularity": 134.625,
+      "release_date": "2024-03-08",
+      "video": false,
+      "vote_average": 7.041,
+      "vote_count": 37
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/syozWkk4Qi4s9RWefcfwCmBqRrt.jpg",
+      "id": 1022690,
+      "title": "Ricky Stanicky",
+      "original_language": "en",
+      "original_title": "Ricky Stanicky",
+      "overview": "Tres amigos de la infancia se inventan a un amigo imaginario para salirse con la suya siempre que lo necesiten. Cuando ya son adultos y la mentira de su amigo imaginario se ve comprometida, el trio es forzado a contratar a un actor para convencer a sus esposas de que Ricky Stanicky es una persona real.",
+      "poster_path": "/eMJPQmvTC39ctlnWlFLJbXqrbSP.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35
+      ],
+      "popularity": 38.29,
+      "release_date": "2024-02-21",
+      "video": false,
+      "vote_average": 6.089,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xvk5AhfhgQcTuaCQyq3XqAnhEma.jpg",
+      "id": 848538,
+      "title": "Argylle",
+      "original_language": "en",
+      "original_title": "Argylle",
+      "overview": "Cuando las tramas de sus libros empiezan a parecerse demasiado a las actividades de un siniestro sindicato clandestino, la introvertida autora de novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del espionaje… donde nada, ni nadie, es lo que parece.",
+      "poster_path": "/kUG54W76qu92g7Qrs9iob6oA6T9.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        53,
+        35
+      ],
+      "popularity": 304.359,
+      "release_date": "2024-01-31",
+      "video": false,
+      "vote_average": 6.158,
+      "vote_count": 402
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg",
+      "id": 693134,
+      "title": "Dune: Parte dos",
+      "original_language": "en",
+      "original_title": "Dune: Part Two",
+      "overview": "Sigue el viaje mítico de Paul Atreides mientras se une a Chani y los Fremen en una guerra de venganza contra los conspiradores que destruyeron a su familia. Al enfrentarse a una elección entre el amor de su vida y el destino del universo conocido, Paul se esfuerza por evitar un futuro terrible que solo él puede prever.",
+      "poster_path": "/v2NN1TMK3ifuiEyawa3ukkcSOUQ.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "popularity": 1265.804,
+      "release_date": "2024-02-27",
+      "video": false,
+      "vote_average": 8.456,
+      "vote_count": 1058
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/o6e8Y0Q7RZIWi4qcJq4s5OYOVJs.jpg",
+      "id": 792307,
+      "title": "Pobres criaturas",
+      "original_language": "en",
+      "original_title": "Poor Things",
+      "overview": "Bella Baxter es una joven revivida por el brillante y poco ortodoxo científico Dr. Godwin Baxter. Bajo la protección de Baxter, Bella está ansiosa por aprender. Hambrienta de la mundanidad que le falta, Bella se escapa con Duncan Wedderburn, un sofisticado y perverso abogado, en una aventura vertiginosa a través de los continentes. Libre de los prejuicios de su época, Bella se vuelve firme en su propósito de defender la igualdad y la liberación.",
+      "poster_path": "/9OYMVcP2zyw0zpWOTuxlDo2MsMw.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        878,
+        10749,
+        35
+      ],
+      "popularity": 976.8,
+      "release_date": "2023-12-07",
+      "video": false,
+      "vote_average": 7.963,
+      "vote_count": 1893
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lzWHmYdfeFiMIY4JaMmtR7GEli3.jpg",
+      "id": 438631,
+      "title": "Dune",
+      "original_language": "en",
+      "original_title": "Dune",
+      "overview": "En un lejano futuro, la galaxia conocida es gobernada mediante un sistema feudal de casas nobles bajo el mandato del Emperador. Las alianzas y la política giran entorno a un pequeño planeta, Dune,  del que extrae la \"especia melange\", la materia prima que permite los viajes espaciales. La Casa Atreides, bajo el mandato del Duque Leto Atreides recibe el encargo de custodiar el planeta, relevando en la encomienda a sus históricos enemigos, los Harkonnen. Paul Atreides, hijo del duque, se verá atrapado en las intrigas políticas mientras descubre el destino que le deparan los desiertos de Dune.",
+      "poster_path": "/hIEKzq0klqtz1H3S7QxzH4mMbvT.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        878,
+        12
+      ],
+      "popularity": 738.715,
+      "release_date": "2021-09-15",
+      "video": false,
+      "vote_average": 7.788,
+      "vote_count": 10566
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gzlprPDmKCS4bUT4BxQZmJfpMX9.jpg",
+      "id": 636706,
+      "title": "El astronauta",
+      "original_language": "en",
+      "original_title": "Spaceman",
+      "overview": "Durante una misión de investigación, un astronauta descubre que su matrimonio está en problemas, Por suerte, cuenta con la ayuda de una misteriosa criatura escondida en su nave.",
+      "poster_path": "/q4G7NXuQ0hDCdO6PUQswyU0VDiF.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        878,
+        18
+      ],
+      "popularity": 584.143,
+      "release_date": "2024-02-23",
+      "video": false,
+      "vote_average": 6.674,
+      "vote_count": 218
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+      "id": 1011985,
+      "title": "Kung Fu Panda 4",
+      "original_language": "en",
+      "original_title": "Kung Fu Panda 4",
+      "overview": "Po se prepara para ser el líder espiritual del Valle de la Paz, buscando un sucesor como Guerrero Dragón. Mientras entrena a un nuevo practicante de kung fu, enfrenta al villano llamado \"el Camaleón\", que evoca villanos del pasado, desafiando todo lo que Po y sus amigos han aprendido.",
+      "poster_path": "/yUAyBYAWI7oZJwi3K5pjiPO7azm.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        16,
+        35,
+        10751
+      ],
+      "popularity": 815.015,
+      "release_date": "2024-03-02",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 17
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nTPFkLUARmo1bYHfkfdNpRKgEOs.jpg",
+      "id": 1072790,
+      "title": "Cualquiera menos tú",
+      "original_language": "en",
+      "original_title": "Anyone But You",
+      "overview": "Después de una primera cita increíble, la ardiente atracción entre ambos se enfría. Parecían la pareja perfecta, pero algo sucede y la cosa no va a más. Hasta que se reencuentran inesperadamente en una boda en Australia. Allí hacen lo que haría cualquier adulto: fingir que son una pareja.",
+      "poster_path": "/gvpU4eMgDC6LpWLxnqGW3uMFDx3.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "popularity": 932.844,
+      "release_date": "2023-12-21",
+      "video": false,
+      "vote_average": 6.959,
+      "vote_count": 863
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
+      "id": 787699,
+      "title": "Wonka",
+      "original_language": "en",
+      "original_title": "Wonka",
+      "overview": "Basada en el personaje que protagoniza \"Charlie y la fábrica de chocolate\", el libro infantil más emblemático de Roald Dahl y uno de los más vendidos de todos los tiempos, \"Wonka\" cuenta la historia de cómo el mayor inventor, mago y chocolatero del mundo se convirtió en el querido Willy Wonka que conocemos hoy en día.",
+      "poster_path": "/6eHcR7zwvNSvkOl9jbctU0lvZQ1.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        10751,
+        14
+      ],
+      "popularity": 583.612,
+      "release_date": "2023-12-06",
+      "video": false,
+      "vote_average": 7.202,
+      "vote_count": 2395
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cu5Qk2QHxOyyMrD3Bq93DxgmJer.jpg",
+      "id": 1046090,
+      "title": "El cerdo, la serpiente y la paloma",
+      "original_language": "zh",
+      "original_title": "周處除三害",
+      "overview": "Cuando descubre que solo es el tercer fugitivo más buscado de Taiwán, un ambicioso criminal decide eliminar del podio a los dos primeros.",
+      "poster_path": "/aqfS8ZHWq9UY52XRZXVmwBHB2r8.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        80
+      ],
+      "popularity": 139.527,
+      "release_date": "2023-10-06",
+      "video": false,
+      "vote_average": 7.827,
+      "vote_count": 52
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+      "id": 872585,
+      "title": "Oppenheimer",
+      "original_language": "en",
+      "original_title": "Oppenheimer",
+      "overview": "Película sobre el físico J. Robert Oppenheimer y su papel como desarrollador de la bomba atómica. Basada en el libro 'American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer' de Kai Bird y Martin J. Sherwin.",
+      "poster_path": "/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "popularity": 337.453,
+      "release_date": "2023-07-19",
+      "video": false,
+      "vote_average": 8.114,
+      "vote_count": 6980
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6SLyu9ygASsrOqkCpjAwtyG9PWW.jpg",
+      "id": 1094556,
+      "title": "El retorno de los Thunderman",
+      "original_language": "en",
+      "original_title": "The Thundermans Return",
+      "overview": "Cuando comienzan una nueva era de lucha contra el crimen pero un salvamento sale mal, los Thundermans son enviados de vuelta a Hiddenville.",
+      "poster_path": "/u9F0QlZwwecGE9eHaaGKzx3pSS0.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        10751,
+        878,
+        28,
+        35
+      ],
+      "popularity": 121.152,
+      "release_date": "2024-03-07",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aPQsU3yLDUOhLJYnSqkhKRkQTAw.jpg",
+      "id": 467244,
+      "title": "La zona de interés",
+      "original_language": "en",
+      "original_title": "The Zone of Interest",
+      "overview": "El comandante de Auschwitz Rudolf Höss y su esposa Hedwig se esfuerzan en construir una vida de ensueño para su familia en una casa con jardín cerca del campo.",
+      "poster_path": "/9MnkJqWjS7yYmG5DYix8Regyljq.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        36,
+        18,
+        10752
+      ],
+      "popularity": 173.673,
+      "release_date": "2023-12-15",
+      "video": false,
+      "vote_average": 7.336,
+      "vote_count": 663
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fGe1ej335XbqN1j9teoDpofpbLX.jpg",
+      "id": 915935,
+      "title": "Anatomía de una caída",
+      "original_language": "fr",
+      "original_title": "Anatomie d'une chute",
+      "overview": "Sandra, una escritora alemana, vive con su marido Samuel y su hijo ciego, Daniel, en un chalé en medio de los Alpes franceses. Cuando Samuel fallece en misteriosas circunstancias, la investigación no puede determinar si se trata de un suicidio o de un homicidio. Sandra es arrestada y juzgada por asesinato, y el proceso pone su tumultuosa relación y su ambigua personalidad en el punto de mira",
+      "poster_path": "/ucWcS7N5HPetmQXBqVsKzUeUg2p.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        53,
+        9648,
+        80
+      ],
+      "popularity": 147.078,
+      "release_date": "2023-08-23",
+      "video": false,
+      "vote_average": 7.677,
+      "vote_count": 1275
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg",
+      "id": 346698,
+      "title": "Barbie",
+      "original_language": "en",
+      "original_title": "Barbie",
+      "overview": "Barbie vive en Barbieland donde todo es ideal y lleno de música y color. Un buen día decide conocer el mundo real. Cuando el CEO de Mattel se entere, tratará de evitarlo a toda costa y devolver a Barbie a una caja.",
+      "poster_path": "/fNtqD4BTFj0Bgo9lyoAtmNFzxHN.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        12
+      ],
+      "popularity": 274.599,
+      "release_date": "2023-07-06",
+      "video": false,
+      "vote_average": 7.103,
+      "vote_count": 7639
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ekRp1sEA8pnuzVHQkUESTgNSKdW.jpg",
+      "id": 932420,
+      "title": "Código 8 (Parte 2)",
+      "original_language": "en",
+      "original_title": "Code 8 Part II",
+      "overview": "Una chica que lucha por buscar justicia para su hermano asesinado por policías corruptos. Ella solicita la ayuda de un ex convicto y su ex pareja, pero deben enfrentar a un sargento de policía muy respetado y bien protegido.",
+      "poster_path": "/b00zs9USt7Qwd1po8Dm5tt0JUU9.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        878,
+        28,
+        80
+      ],
+      "popularity": 1222.829,
+      "release_date": "2024-02-27",
+      "video": false,
+      "vote_average": 6.578,
+      "vote_count": 179
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dmiN2rakG9hZW04Xx7mHOoHTOyD.jpg",
+      "id": 673593,
+      "title": "Chicas malas",
+      "original_language": "en",
+      "original_title": "Mean Girls",
+      "overview": "La nueva estudiante Cady Heron es bienvenida a la cima de la cadena social por el elitista grupo de chicas populares llamado \"Las Plásticas\", gobernado por la intrigante abeja reina Regina George y sus secuaces Gretchen y Karen. Sin embargo, cuando Cady comete el grave error de enamorarse del ex novio de Regina, Aaron Samuels, se encuentra en el punto de mira de Regina. Con la ayuda de sus amigos marginados Janis y Damian, Cady se propone acabar con la depredadora del grupo y aprender a ser fiel a sí misma en la jungla más despiadada de todas: el instituto.",
+      "poster_path": "/OcZPwR89CM8ay8asq3J4XFeKII.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35
+      ],
+      "popularity": 285.621,
+      "release_date": "2024-01-10",
+      "video": false,
+      "vote_average": 6.336,
+      "vote_count": 244
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/57fhbxl9is7W7ur5v6UuvlNsoSg.jpg",
+      "id": 840430,
+      "title": "Los que se quedan",
+      "original_language": "en",
+      "original_title": "The Holdovers",
+      "overview": "A nadie le gusta el profesor Paul Hunham (Giamatti), ni a sus alumnos, ni a sus compañeros, ni al director de la escuela secundaria donde trabaja, a todos les resulta exasperante su pomposidad y rigidez. Sin familia y sin ningún lugar a donde ir durante las vacaciones de Navidad de 1970, Paul se queda en la escuela para supervisar a los estudiantes que no han podido viajar a casa. Después de unos días, solo queda allí un estudiante: un problemático chico de 15 años llamado Angus, un buen estudiante cuyo mal comportamiento siempre amenaza con expulsarlo. Junto a Paul y Angus está la cocinera Mary (Randolph), una mujer afroamericana que atiende a hijos privilegiados y cuyo propio hijo perdió la vida recientemente en Vietnam. Estos tres náufragos tan diferentes formarán una improbable familia durante dos semanas muy nevadas en Nueva Inglaterra.",
+      "poster_path": "/aZj21Kcmazecm6VDBn4bYU4evi3.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "popularity": 108.971,
+      "release_date": "2023-10-27",
+      "video": false,
+      "vote_average": 7.763,
+      "vote_count": 919
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bckxSN9ueOgm0gJpVJmPQrecWul.jpg",
+      "id": 572802,
+      "title": "Aquaman y el reino perdido",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Al no poder derrotar a Aquaman la primera vez, Black Manta, todavía impulsado por la necesidad de vengar la muerte de su padre, no se detendrá ante nada para derrotar a Aquaman de una vez por todas. Esta vez Black Manta es más formidable que nunca y ejerce el poder del mítico Tridente Negro, que desata una fuerza antigua y malévola.  Para derrotarlo, Aquaman recurrirá a su hermano encarcelado Orm, el ex rey de la Atlántida, para forjar una alianza improbable. Juntos, deben dejar de lado sus diferencias para proteger su reino y salvar a la familia de Aquaman, y al mundo, de una destrucción irreversible.",
+      "poster_path": "/3OdMJBOGkp62e0DfY4ZykL9RuCP.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 338.587,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.837,
+      "vote_count": 1969
+    }
+  ],
+  "total_pages": 1000,
+  "total_results": 20000
+}
