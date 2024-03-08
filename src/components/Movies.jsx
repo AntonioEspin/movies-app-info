@@ -4,7 +4,7 @@ import { Movie } from './Movie'
 export function Movies ({movies}) {
   return (
     <main className='main'>
-      <h1></h1>
+      <h1>Todas las películas</h1>
       <section className='moviesContainer'>
         {
           movies.map(item => (

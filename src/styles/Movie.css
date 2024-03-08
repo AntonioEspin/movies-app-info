@@ -1,0 +1,21 @@
+.movie {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.movie-image {
+  width: 100%;
+}
+
+.movie-image > img {
+  width: inherit;
+  object-fit: cover;
+  aspect-ratio: 2/3;
+}
+
+.movie-average {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
