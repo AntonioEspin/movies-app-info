@@ -1,0 +1,64 @@
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.buttons>button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons>button:first-child {
+  background-color: var(--primary);
+}
+
+.buttons>button:last-child {
+  background-color: var(--black);
+  color: var(--primary);
+}
+
+.buttons>button span {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.dots {
+  justify-content: center;
+  margin: 25px 0 50px;
+  display: flex;
+}
+
+.dots input[type="radio"] {
+  display: none;
+}
+
+.dots label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dots input[type="radio"]:checked+label {
+  background-color: #333;
+}
