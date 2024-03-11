@@ -3,8 +3,7 @@ import iconPlus from '../icons/icon-plus.svg'
 import '../styles/Slide.css'
 const URL_IMAGE = 'https://image.tmdb.org/t/p/original'
 
-export function Slide ({movies}) {
-  const firstThreeMovies = movies.slice(0,3)
+export function Slide ({firstThreeMovies}) {
   return (
     <>
       {
@@ -27,8 +26,7 @@ export function Slide ({movies}) {
   )
 }
 
-export function Dots ({movies, currentIndex, handleDotClick}) {
-  const firstThreeMovies = movies.slice(0,3)
+export function Dots ({firstThreeMovies, currentIndex, handleDotClick}) {
   return (
     <>
       <div className="dots">
