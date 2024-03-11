@@ -1,12 +1,12 @@
-import { useState } from "react"
 import { Header } from "./components/Header"
 import { Slider } from "./components/Slider"
 import { Movies } from "./components/Movies"
-import dataMovies from './mocks/movies-data.json'
+import { useGetMovies } from "./hooks/useGetMovies"
+// import dataMovies from './mocks/movies-data.json'
 
 function App() {
 
-  const [movies, setMovies] = useState(dataMovies.results)
+  const {movies} = useGetMovies()
 
   return (
     <>
