@@ -8,6 +8,7 @@ function App() {
 
   const {movies} = useGetMovies()
 
+
   return (
     <>
       <Header/>

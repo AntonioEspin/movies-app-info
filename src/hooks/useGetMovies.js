@@ -1,24 +1,17 @@
 import { useEffect, useState } from "react";
+import { getTrendingMovies } from "../services/getMovies";
 
 export function useGetMovies () {
-  const API = 'https://api.themoviedb.org/3/trending/movie/day?language=es'
 
   const [movies, setMovies] = useState([])
 
+  const moviesTrending = async () => {
+    const data = await getTrendingMovies()
+    setMovies(data)
+  }
+
   useEffect(()=>{
-
-    const options = {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-        Authorization: import.meta.env.VITE_AUTHORITAZION
-      }
-    };
-
-    fetch(API, options)
-      .then(response => response.json())
-      .then(data => setMovies(data.results))
-      .catch(err => console.error(err));
+    moviesTrending()
   }, [])
 
   return {movies}

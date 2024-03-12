@@ -1,25 +1,10 @@
-import { useEffect, useState } from "react"
 import { Slide, Dots } from "./Slide"
+import { useSlider } from "../hooks/useSlider"
 import '../styles/Slider.css'
 
 
 export function Slider ({movies}) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [intervalId, setIntervalId] = useState(null)
-
-  const firstThreeMovies = movies.slice(0,3)
-
-  // Mover el slider automaticamente
-  useEffect(()=>{
-    const interval = setInterval(()=>{
-      setCurrentIndex(prevState => (prevState + 1) % firstThreeMovies.length )
-    },3000);
-
-    setIntervalId(interval)
-
-    return () => clearInterval(interval)
-
-  },[firstThreeMovies.length])
+  const {currentIndex, intervalId, setCurrentIndex, setIntervalId, firstThreeMovies} = useSlider({movies})
 
   const handleDotClick = (index) => {
     setCurrentIndex(index)
