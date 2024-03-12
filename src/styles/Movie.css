@@ -1,15 +1,19 @@
 .movie {
   position: relative;
-  width: 100%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .movie-image {
-  width: 100%;
+  position: relative;
 }
 
 .movie-image > img {
-  width: inherit;
+  width: 100%;
+  max-width: 264px;
+  min-width: 200px;
   object-fit: cover;
   aspect-ratio: 2/3;
 }

@@ -30,14 +30,14 @@
   border: 3px solid var(--primary);
   border-radius: 8px;
   outline: none;
+  padding-left: 20px;
 }
 
 .header__search > input::placeholder {
-  padding-left: 20px;
   font-size: "Inter", sans-serif;
 }
 
-.header__search > figure {
+.header__search > button {
   position: absolute;
   right: 0;
   top: 0;
@@ -50,4 +50,5 @@
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
   cursor: pointer;
+  border: none;
 }

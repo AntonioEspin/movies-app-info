@@ -2,7 +2,17 @@ import logoMovies from '../images/logo-blockBuster.svg'
 import iconSearch from '../icons/icon-search.svg'
 import '../styles/Header.css'
 
-export function Header () {
+export function Header ({setSearch, moviesSearch}) {
+
+  const handleSubmitSearch = (e) => {
+    e.preventDefault()
+    const {elements} = e.currentTarget
+    const item = elements.namedItem('inputSearch')
+    setSearch(item.value)
+    moviesSearch(item.value)
+    item.value = ''
+  }
+
   return (
     <header className="header">
       <figure className="header__figure">
@@ -17,13 +27,13 @@ export function Header () {
         </ul>
       </nav>
 
-      <div className="header__search">
-        <label htmlFor=""></label>
-        <input type="text" placeholder="Busca tu película favorita" />
-        <figure>
+      <form onSubmit={handleSubmitSearch} className="header__search">
+        <label htmlFor="inputSearch"></label>
+        <input name='inputSearch' id='inputSearch' type="text" placeholder="Busca tu película favorita" />
+        <button>
           <img src={iconSearch} alt="icon-search" />
-        </figure>
-      </div>
+        </button>
+      </form>
     </header>
   )
 }

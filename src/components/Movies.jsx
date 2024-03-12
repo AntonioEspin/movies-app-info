@@ -7,7 +7,7 @@ export function Movies ({movies}) {
       <h1>Todas las películas</h1>
       <section className='moviesContainer'>
         {
-          movies.map(item => (
+          movies?.map(item => (
             <Movie key={item.id} {...item} />
           ))
         }
