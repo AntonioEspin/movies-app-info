@@ -1,0 +1,25 @@
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalMovie {
+  position: relative;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalMovie > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+

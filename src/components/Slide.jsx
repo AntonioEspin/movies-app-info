@@ -1,5 +1,4 @@
-import iconPlay from '../icons/icon-play.svg'
-import iconPlus from '../icons/icon-plus.svg'
+import { Buttons } from './Buttons'
 import '../styles/Slide.css'
 const URL_IMAGE = 'https://image.tmdb.org/t/p/original'
 
@@ -9,16 +8,7 @@ export function Slide ({firstThreeMovies}) {
       {
         firstThreeMovies.map(item => (
           <div className="slide" style={{backgroundImage: `url(${URL_IMAGE}${item.backdrop_path})`}} key={item.id}>
-            <div className="buttons">
-              <button>
-                <img src={iconPlay} alt="icon-play" />
-                <span>VER AHORA</span>
-              </button>
-              <button>
-                <img src={iconPlus} alt="icon-plus" />
-                <span>VER DESPUÉS</span>
-              </button>
-            </div>
+            <Buttons/>
           </div>
         ))
       }

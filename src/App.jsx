@@ -4,13 +4,16 @@ import { Movies } from "./components/Movies"
 import { useGetMovies } from "./hooks/useGetMovies"
 import { useState } from "react"
 import { ErrorSearchMovie } from "./components/ErrorSearchMovie"
+import { ModalMovie } from "./components/ModalMovie"
 // import dataMovies from './mocks/movies-data.json'
 
 function App() {
 
   const [search, setSearch] = useState('')
+  const [modalMovie, setModalMovie] = useState([])
+  const [openModal, setOpenModal] = useState(false)
   const {movies, getMovies, moviesSearch, errorSearch} = useGetMovies({search})
-
+console.log(openModal)
   return (
     <>
       <Header
@@ -18,9 +21,21 @@ function App() {
         moviesSearch={moviesSearch}
       />
       <Slider movies={movies}/>
-      <Movies movies={getMovies}/>
+      <Movies
+        movies={getMovies}
+        setModalMovie={setModalMovie}
+        setOpenModal={setOpenModal}
+      />
       {
         errorSearch && <ErrorSearchMovie search={search}/>
+      }
+      {
+        openModal && 
+          <ModalMovie
+            movie={modalMovie}
+            openModal={openModal}
+            setOpenModal={setOpenModal}
+          />
       }
     </>
   )
