@@ -2,7 +2,7 @@ import logoMovies from '../images/logo-blockBuster.svg'
 import iconSearch from '../icons/icon-search.svg'
 import '../styles/Header.css'
 
-export function Header ({setSearch, moviesSearch}) {
+export function Header ({setSearch, moviesSearch, moviesByPopularity, moviesTrending}) {
 
   const handleSubmitSearch = (e) => {
     e.preventDefault()
@@ -13,6 +13,26 @@ export function Header ({setSearch, moviesSearch}) {
     item.value = ''
   }
 
+  const handleNavList = (e) => {
+    const valueLIst = e.target.innerText
+    let popularity
+
+    if(valueLIst === 'Más valoradas') {
+      popularity = 'popularity.desc'
+      moviesByPopularity(popularity)
+      return
+    }
+
+    if(valueLIst === 'Menos valoradas') {
+      popularity = 'popularity.asc'
+      moviesByPopularity(popularity)
+      return
+    }
+
+    return moviesTrending()
+
+  }
+
   return (
     <header className="header">
       <figure className="header__figure">
@@ -21,9 +41,9 @@ export function Header ({setSearch, moviesSearch}) {
 
       <nav className="header__nav">
         <ul className="header__nav--list">
-          <li>Todas</li>
-          <li>Más valoradas</li>
-          <li>Menos valoradas</li>
+          <li onClick={handleNavList}>Todas</li>
+          <li onClick={handleNavList}>Más valoradas</li>
+          <li onClick={handleNavList}>Menos valoradas</li>
         </ul>
       </nav>
 

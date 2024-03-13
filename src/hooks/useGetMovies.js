@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getSearchMovies, getTrendingMovies } from "../services/getMovies";
+import { getMoviesByPopularity, getSearchMovies, getTrendingMovies } from "../services/getMovies";
 
 export function useGetMovies ({search}) {
 
@@ -15,6 +15,11 @@ export function useGetMovies ({search}) {
   const moviesSearch = async (search) => {
     const data = await getSearchMovies(search)
     setSearchMovies(data)
+  }
+
+  const moviesByPopularity = async (popularity) => {
+    const data = await getMoviesByPopularity(popularity)
+    setMovies(data)
   }
 
   const getMovies = search
@@ -33,5 +38,5 @@ export function useGetMovies ({search}) {
     setErrorSearch(false)
   },[getMovies.length, search])
 
-  return {movies, getMovies, moviesSearch, errorSearch}
+  return {movies, getMovies, moviesSearch, moviesByPopularity, moviesTrending, errorSearch}
 }

@@ -12,13 +12,15 @@ function App() {
   const [search, setSearch] = useState('')
   const [modalMovie, setModalMovie] = useState([])
   const [openModal, setOpenModal] = useState(false)
-  const {movies, getMovies, moviesSearch, errorSearch} = useGetMovies({search})
+  const {movies, getMovies, moviesSearch, moviesByPopularity, moviesTrending, errorSearch} = useGetMovies({search})
 
   return (
     <>
       <Header
         setSearch={setSearch}
         moviesSearch={moviesSearch}
+        moviesTrending= {moviesTrending}
+        moviesByPopularity={moviesByPopularity}
       />
       <Slider movies={movies}/>
       <Movies
