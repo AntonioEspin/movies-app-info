@@ -3,17 +3,23 @@ import { Movie } from './Movie'
 import '../styles/ModalMovie.css'
 
 
+
 export function ModalMovie ({movie, openModal, setOpenModal}) {
 
-  console.log(movie)
   const {title, overview, release_date, media_type} = movie
 
   const handleModalMovie = () => {
     setOpenModal(prevState => !prevState)
   }
+
+  
+
+
+
+
   return (
     <section className='modal-container'>
-      <article className="modalMovie">
+      <article className="modalMovie" >
         <span onClick={handleModalMovie}>X</span>
         <Movie {...movie}/>
         <aside className="modalMovie__info">
@@ -22,6 +28,7 @@ export function ModalMovie ({movie, openModal, setOpenModal}) {
             <p>{overview}</p>
             <div className="info__details">
               <span>{release_date}</span>
+              <span>|</span>
               <span>{media_type}</span>
             </div>
           </div>

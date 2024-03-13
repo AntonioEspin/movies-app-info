@@ -13,7 +13,7 @@ function App() {
   const [modalMovie, setModalMovie] = useState([])
   const [openModal, setOpenModal] = useState(false)
   const {movies, getMovies, moviesSearch, errorSearch} = useGetMovies({search})
-console.log(openModal)
+
   return (
     <>
       <Header

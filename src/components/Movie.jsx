@@ -2,7 +2,7 @@ import iconStar from '../icons/icon-star.svg'
 import '../styles/Movie.css'
 const URL_IMAGE = 'https://image.tmdb.org/t/p/w500'
 
-export function Movie ({poster_path, vote_average, title, onClick, setOpenModal }) {
+export function Movie ({poster_path, vote_average, title, onClick, setOpenModal}) {
 
   const isPopularMovie = vote_average >= 7 && 'popular-movie' 
 
