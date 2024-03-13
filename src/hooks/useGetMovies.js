@@ -4,7 +4,6 @@ import { getMoviesByPopularity, getSearchMovies, getTrendingMovies } from "../se
 export function useGetMovies ({search}) {
 
   const [movies, setMovies] = useState([])
-  const [searchMovies, setSearchMovies] = useState([])
   const [errorSearch, setErrorSearch] = useState(false)
 
   const moviesTrending = async () => {
@@ -14,7 +13,7 @@ export function useGetMovies ({search}) {
 
   const moviesSearch = async (search) => {
     const data = await getSearchMovies(search)
-    setSearchMovies(data)
+    setMovies(data)
   }
 
   const moviesByPopularity = async (popularity) => {
@@ -22,21 +21,21 @@ export function useGetMovies ({search}) {
     setMovies(data)
   }
 
-  const getMovies = search
-    ? searchMovies
-    : movies
+  // const getMovies = search
+  //   ? searchMovies
+  //   : movies
 
   useEffect(()=>{
     moviesTrending()
   }, [])
 
   useEffect(()=>{
-    if (getMovies.length === 0) {
+    if (movies.length === 0) {
       return setErrorSearch(true)
     }
 
     setErrorSearch(false)
-  },[getMovies.length, search])
+  },[movies.length, search])
 
-  return {movies, getMovies, moviesSearch, moviesByPopularity, moviesTrending, errorSearch}
+  return {movies, moviesSearch, moviesByPopularity, moviesTrending, errorSearch}
 }
