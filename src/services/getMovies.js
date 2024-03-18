@@ -20,7 +20,7 @@ export async function getTrendingMovies () {
 }
 
 
-export async function getSearchMovies (search) {
+export async function getSearchMovies (search, page) {
   const options = {
     method: 'GET',
     headers: {
@@ -30,7 +30,7 @@ export async function getSearchMovies (search) {
   };
 
   try {
-    const response = await fetch(`https://api.themoviedb.org/3/search/movie?query=${search}&language=es&page=1`, options);
+    const response = await fetch(`https://api.themoviedb.org/3/search/movie?query=${search}&language=es&page=${page}`, options);
     const data = await response.json();
     const movies = data.results
     return movies
@@ -40,7 +40,7 @@ export async function getSearchMovies (search) {
 }
 
 
-export async function getMoviesByPopularity (popularity) {
+export async function getMoviesByPopularity (page) {
   const options = {
     method: 'GET',
     headers: {
@@ -50,7 +50,7 @@ export async function getMoviesByPopularity (popularity) {
   };
 
   try {
-    const response = await fetch(`https://api.themoviedb.org/3/discover/movie?language=es&page=1&sort_by=${popularity}`, options);
+    const response = await fetch(`https://api.themoviedb.org/3/discover/movie?language=es&page=${page}`, options);
     const data = await response.json();
     const movies = data.results
     return movies

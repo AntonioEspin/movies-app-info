@@ -7,7 +7,13 @@ export function useGetMovies ({search}) {
   const [filteredMovies, setFilteredMovies] = useState ([])
   const [searchMovies, setSearchMovies] = useState([])
   const [trendingMovies, setTrendingMovies] = useState([])
+  const [page, setPage] = useState(1)
   const [errorSearch, setErrorSearch] = useState(false)
+
+  const loadMoreMovies = () => {
+    setPage( prevState => prevState + 1)
+    console.log('entreee')
+  }
 
   const moviesTrending = async () => {
     const data = await getTrendingMovies()
@@ -15,12 +21,12 @@ export function useGetMovies ({search}) {
   }
 
   const moviesSearch = async (search) => {
-    const data = await getSearchMovies(search)
+    const data = await getSearchMovies(search, page)
     setSearchMovies(data)
   }
 
-  const moviesByPopularity = async (popularity) => {
-    const data = await getMoviesByPopularity(popularity)
+  const moviesByPopularity = async () => {
+    const data = await getMoviesByPopularity(page)
     setMovies(data)
     setFilteredMovies(data)
   }
@@ -42,7 +48,7 @@ export function useGetMovies ({search}) {
   useEffect(()=>{
     moviesTrending()
     moviesByPopularity()
-  }, [])
+  }, [page])
 
   useEffect(()=>{
     if (movies.length === 0) {
@@ -52,5 +58,5 @@ export function useGetMovies ({search}) {
     setErrorSearch(false)
   },[movies.length, search])
 
-  return {movies: filteredMovies, searchMovies, filterMovies, trendingMovies, moviesSearch, moviesByPopularity, errorSearch}
+  return {movies: filteredMovies, searchMovies, filterMovies, trendingMovies, moviesSearch, moviesByPopularity, errorSearch, loadMoreMovies}
 }

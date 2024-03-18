@@ -5,6 +5,7 @@ import { useGetMovies } from "./hooks/useGetMovies"
 import { useState } from "react"
 import { ErrorSearchMovie } from "./components/ErrorSearchMovie"
 import { ModalMovie } from "./components/ModalMovie"
+import { MoreMovies } from "./components/MoreMovies"
 // import dataMovies from './mocks/movies-data.json'
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
   const [active, setActive] = useState(false)
   const [modalMovie, setModalMovie] = useState([])
   const [openModal, setOpenModal] = useState(false)
-  const {movies, searchMovies, filterMovies, trendingMovies, moviesSearch, errorSearch} = useGetMovies({search})
+  const {movies, searchMovies, filterMovies, trendingMovies, moviesSearch, errorSearch, loadMoreMovies} = useGetMovies({search})
+
 
   return (
     <>
@@ -27,17 +29,24 @@ function App() {
       {
         !active
         ? 
-          <Movies
-            movies={movies}
-            setModalMovie={setModalMovie}
-            setOpenModal={setOpenModal}
-          />
+          <>
+            <Movies
+              movies={movies}
+              setModalMovie={setModalMovie}
+              setOpenModal={setOpenModal}
+            />
+            <MoreMovies loadMoreMovies={loadMoreMovies}/>
+          </>
+
         :
-          <Movies
-            movies={searchMovies}
-            setModalMovie={setModalMovie}
-            setOpenModal={setOpenModal}
-          />
+          <>
+            <Movies
+              movies={searchMovies}
+              setModalMovie={setModalMovie}
+              setOpenModal={setOpenModal}
+            />
+            <MoreMovies loadMoreMovies={loadMoreMovies}/>
+          </>
       }
       
       {
