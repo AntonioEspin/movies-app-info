@@ -2,7 +2,7 @@ import logoMovies from '../images/logo-blockBuster.svg'
 import iconSearch from '../icons/icon-search.svg'
 import '../styles/Header.css'
 
-export function Header ({setSearch, moviesSearch, moviesByPopularity}) {
+export function Header ({setSearch, filterMovies, moviesSearch, setActive}) {
 
   const handleSubmitSearch = (e) => {
     e.preventDefault()
@@ -10,31 +10,26 @@ export function Header ({setSearch, moviesSearch, moviesByPopularity}) {
     const item = elements.namedItem('inputSearch')
     setSearch(item.value)
     moviesSearch(item.value)
+    setActive(true)
     item.value = ''
   }
 
-  const handleNavList = (e) => {
-    const valueLIst = e.target.innerText
-    let popularity
-
-    if(valueLIst === 'Más valoradas') {
-      popularity = 'vote_average.desc'
-      moviesByPopularity(popularity)
-      return
+  const handleFilterMovies = (e) => {
+    const value = e.target.innerText
+    if (value === 'Todas') {
+      filterMovies(null,null)
+      setActive(false)
     }
 
-    // if(valueLIst === 'Más valoradas') {
-    //   topRated()
-    // }
-
-    if(valueLIst === 'Menos valoradas') {
-      popularity = 'vote_average.asc'
-      moviesByPopularity(popularity)
-      return
+    if (value === 'Más valoradas') {
+      filterMovies(7, null)
+      setActive(false)
     }
 
-    return moviesByPopularity('')
-
+    if (value === 'Menos valoradas') {
+      filterMovies(null,7)
+      setActive(false)
+    }
   }
 
   return (
@@ -45,9 +40,9 @@ export function Header ({setSearch, moviesSearch, moviesByPopularity}) {
 
       <nav className="header__nav">
         <ul className="header__nav--list">
-          <li onClick={handleNavList}>Todas</li>
-          <li onClick={handleNavList}>Más valoradas</li>
-          <li onClick={handleNavList}>Menos valoradas</li>
+          <li onClick={handleFilterMovies}>Todas</li>
+          <li onClick={handleFilterMovies}>Más valoradas</li>
+          <li onClick={handleFilterMovies}>Menos valoradas</li>
         </ul>
       </nav>
 

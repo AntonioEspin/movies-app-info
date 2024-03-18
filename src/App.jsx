@@ -10,26 +10,36 @@ import { ModalMovie } from "./components/ModalMovie"
 function App() {
 
   const [search, setSearch] = useState('')
+  const [active, setActive] = useState(false)
   const [modalMovie, setModalMovie] = useState([])
   const [openModal, setOpenModal] = useState(false)
-  const {movies, trendingMovies, moviesSearch, moviesByPopularity, errorSearch} = useGetMovies({search})
-
-  console.log('cambio')
+  const {movies, searchMovies, filterMovies, trendingMovies, moviesSearch, errorSearch} = useGetMovies({search})
 
   return (
     <>
       <Header
         setSearch={setSearch}
-        // topRated={topRated}
+        filterMovies={filterMovies}
         moviesSearch={moviesSearch}
-        moviesByPopularity={moviesByPopularity}
+        setActive={setActive}
       />
       <Slider movies={trendingMovies}/>
-      <Movies
-        movies={movies}
-        setModalMovie={setModalMovie}
-        setOpenModal={setOpenModal}
-      />
+      {
+        !active
+        ? 
+          <Movies
+            movies={movies}
+            setModalMovie={setModalMovie}
+            setOpenModal={setOpenModal}
+          />
+        :
+          <Movies
+            movies={searchMovies}
+            setModalMovie={setModalMovie}
+            setOpenModal={setOpenModal}
+          />
+      }
+      
       {
         errorSearch && <ErrorSearchMovie search={search}/>
       }
