@@ -12,17 +12,19 @@ function App() {
   const [search, setSearch] = useState('')
   const [modalMovie, setModalMovie] = useState([])
   const [openModal, setOpenModal] = useState(false)
-  const {movies, moviesSearch, moviesByPopularity, moviesTrending, errorSearch} = useGetMovies({search})
+  const {movies, trendingMovies, moviesSearch, moviesByPopularity, errorSearch} = useGetMovies({search})
+
+  console.log('cambio')
 
   return (
     <>
       <Header
         setSearch={setSearch}
+        // topRated={topRated}
         moviesSearch={moviesSearch}
-        moviesTrending= {moviesTrending}
         moviesByPopularity={moviesByPopularity}
       />
-      <Slider movies={movies}/>
+      <Slider movies={trendingMovies}/>
       <Movies
         movies={movies}
         setModalMovie={setModalMovie}

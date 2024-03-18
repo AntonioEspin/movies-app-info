@@ -4,11 +4,12 @@ import { getMoviesByPopularity, getSearchMovies, getTrendingMovies } from "../se
 export function useGetMovies ({search}) {
 
   const [movies, setMovies] = useState([])
+  const [trendingMovies, setTrendingMovies] = useState([])
   const [errorSearch, setErrorSearch] = useState(false)
 
   const moviesTrending = async () => {
     const data = await getTrendingMovies()
-    setMovies(data)
+    setTrendingMovies(data)
   }
 
   const moviesSearch = async (search) => {
@@ -21,12 +22,17 @@ export function useGetMovies ({search}) {
     setMovies(data)
   }
 
-  // const getMovies = search
-  //   ? searchMovies
-  //   : movies
+  // Filtrar peliculas con puntaje mayor a 7
+  // const topRated = () => {
+  //   const newMovies = [...movies]
+  //   const topMovies = newMovies.filter(movie => movie?.vote_average >= 7)
+  //   console.log(topMovies)
+  //   setMovies(topMovies)
+  // }
 
   useEffect(()=>{
     moviesTrending()
+    moviesByPopularity()
   }, [])
 
   useEffect(()=>{
@@ -37,5 +43,5 @@ export function useGetMovies ({search}) {
     setErrorSearch(false)
   },[movies.length, search])
 
-  return {movies, moviesSearch, moviesByPopularity, moviesTrending, errorSearch}
+  return {movies, setMovies, trendingMovies, moviesSearch, moviesByPopularity, errorSearch}
 }

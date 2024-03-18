@@ -2,7 +2,7 @@ import logoMovies from '../images/logo-blockBuster.svg'
 import iconSearch from '../icons/icon-search.svg'
 import '../styles/Header.css'
 
-export function Header ({setSearch, moviesSearch, moviesByPopularity, moviesTrending}) {
+export function Header ({setSearch, moviesSearch, moviesByPopularity}) {
 
   const handleSubmitSearch = (e) => {
     e.preventDefault()
@@ -18,18 +18,22 @@ export function Header ({setSearch, moviesSearch, moviesByPopularity, moviesTren
     let popularity
 
     if(valueLIst === 'Más valoradas') {
-      popularity = 'popularity.desc'
+      popularity = 'vote_average.desc'
       moviesByPopularity(popularity)
       return
     }
+
+    // if(valueLIst === 'Más valoradas') {
+    //   topRated()
+    // }
 
     if(valueLIst === 'Menos valoradas') {
-      popularity = 'popularity.asc'
+      popularity = 'vote_average.asc'
       moviesByPopularity(popularity)
       return
     }
 
-    return moviesTrending()
+    return moviesByPopularity('')
 
   }
 
