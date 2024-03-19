@@ -1,0 +1,18 @@
+.moreMovies {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary);
+  cursor: pointer;
+  color: var(--black);
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.moreMovies:hover {
+  transform: scale(1.3);
+}

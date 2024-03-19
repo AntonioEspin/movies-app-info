@@ -20,7 +20,7 @@ export async function getTrendingMovies () {
 }
 
 
-export async function getSearchMovies (search, page) {
+export async function getSearchMovies (search) {
   const options = {
     method: 'GET',
     headers: {
@@ -30,7 +30,7 @@ export async function getSearchMovies (search, page) {
   };
 
   try {
-    const response = await fetch(`https://api.themoviedb.org/3/search/movie?query=${search}&language=es&page=${page}`, options);
+    const response = await fetch(`https://api.themoviedb.org/3/search/movie?query=${search}&language=es&page=1`, options);
     const data = await response.json();
     const movies = data.results
     return movies

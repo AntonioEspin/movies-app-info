@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { getMoviesByPopularity, getSearchMovies, getTrendingMovies } from "../services/getMovies";
 
 export function useGetMovies ({search}) {
@@ -12,7 +12,6 @@ export function useGetMovies ({search}) {
 
   const loadMoreMovies = () => {
     setPage( prevState => prevState + 1)
-    console.log('entreee')
   }
 
   const moviesTrending = async () => {
@@ -21,15 +20,15 @@ export function useGetMovies ({search}) {
   }
 
   const moviesSearch = async (search) => {
-    const data = await getSearchMovies(search, page)
+    const data = await getSearchMovies(search)
     setSearchMovies(data)
   }
 
-  const moviesByPopularity = async () => {
+  const moviesByPopularity = useCallback(async () => {
     const data = await getMoviesByPopularity(page)
-    setMovies(data)
-    setFilteredMovies(data)
-  }
+    setMovies((prevMovies) => [...prevMovies, ...data])
+    setFilteredMovies((prevMovies) => [...prevMovies, ...data])
+  },[page])
 
   const filterMovies = (minRated, maxRated) => {
     let filtered = [...movies]
@@ -47,16 +46,19 @@ export function useGetMovies ({search}) {
 
   useEffect(()=>{
     moviesTrending()
-    moviesByPopularity()
-  }, [page])
+  }, [])
 
   useEffect(()=>{
-    if (movies.length === 0) {
-      return setErrorSearch(true)
-    }
+    moviesByPopularity()
+  }, [moviesByPopularity])
 
-    setErrorSearch(false)
-  },[movies.length, search])
+  useEffect(() => {
+    if (filteredMovies.length === 0) {
+      setErrorSearch(true);
+    } else {
+      setErrorSearch(false);
+    }
+  }, [filteredMovies.length, search]);
 
   return {movies: filteredMovies, searchMovies, filterMovies, trendingMovies, moviesSearch, moviesByPopularity, errorSearch, loadMoreMovies}
 }

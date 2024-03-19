@@ -45,7 +45,9 @@ function App() {
               setModalMovie={setModalMovie}
               setOpenModal={setOpenModal}
             />
-            <MoreMovies loadMoreMovies={loadMoreMovies}/>
+            <MoreMovies
+              loadMoreMovies={loadMoreMovies}
+            />
           </>
       }
       
